@@ -21,29 +21,32 @@
 	<nav><!--set of linking navigation are defined-->
 		<ul> <!--tag for unordered list section-->
 	
-		<b>Home</b></ul><!--end tag of unordered list section-->
-		<ul><b><a href="page1.html">About Me</a></b></ul><!--linkage to about me details page in html-->
-		<ul><b><a href="page2.html">CV</a></b></ul><!--linkage to cv details page in html-->
-		<ul><b><a href="page3.html">Social</a></b></ul><!--linkage to social details page in html-->
-		<ul><b><a href="page4.html">Contact</a></b></ul><!--linakge to contact details page in html-->
-		<ul><b><a href="page5.html">Report</a></b></ul><!--linkage to model-gp pagge in html-->
+		<li><a href="index.html">Home</a></li><!--end tag of unordered list section-->
+		<li><a href="page1.html">About</a></li><!--linkage to about me details page in html-->
+		<li><a href="page2.html">CV</a></li><!--linkage to cv details page in html-->
+		<li><a href="page3.html">Social</a></li><!--linkage to social details page in html-->
+		<li><a href="page4.html">Contact</a></li><!--linakge to contact details page in html-->
+		<li><a href="page5.html">Report</a></li><!--linkage to model-gp pagge in html-->
+	</ul>
     </nav><!--termination of navigation section-->
-	<section>
+	<section class="formPlace">
 		<div class="blue"><!--Parent division tag begins here-->
 			<form action="/action_page.php"><!--tag used for creating input boxes-->
-				<br><br><br>First Name:</br>
-				<input type="text" name="name"><!--datatype of input is defined here-->
-				<br><br>Last Name:</br>
-				<input type="text" name="name"><!--datatype of input is defined here-->
-				<br><br>Gender:</br>
-			    <input type="text" name="gender"> <!--datatype of input is defined here-->
-			    <br><br>Phone.no:</br>
-			    <input type="number" name="phone"><!--datatype of input is defined here-->
-			    <br><br>E-mail id:</br>
+				<!-- <br><br><br> --><label>First Name:</label></br>
+				<input type="text" name="name"><br><br><!--datatype of input is defined here-->
+				<!-- <br><br><br> --><label>Last Name:</label></br>
+				<input type="text" name="name"><br><br><!--datatype of input is defined here-->
+				<!-- <br><br><br> --><label>Gender:</label></br>
+			    <input type="radio" name="gender" value="male"> Male
+			    <input type="radio" name="gender" value="female">Female
+			    <br><br><!--datatype of input is defined here-->
+			    <!-- <br><br><br> --><label>Phone No.:</label></br>
+			    <input type="number" name="phone"><br><br><!--datatype of input is defined here-->
+			    <!-- <br><br><br> --><label>E-mail Id:</label></br>
 			    <input type="logo-text" name="mail"><br><br><!--datatype of input is defined here-->
-			    <textarea name="feedback" rows="10" cols="20">Provide me your feedback here.<!--textarea provides space for unlimited characters-->
+			    <textarea name="feedback" rows="10" cols="22">Provide me your feedback here.<!--textarea provides space for unlimited characters-->
 			    </textarea><!--textarea tag ends--><br><br>
-			    <input type="submit" >
+			    <input type="submit" name="submit" value="Submit">
 		</div><!--parent division tag terminates here-->
 		<div class="pie">
 		<div class="pink">

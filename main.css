@@ -1,3 +1,7 @@
+body{
+	margin:0;
+	padding:0;
+}
 header{
 	font-family: 'Fredericka the Great', cursive;
 	background-repeat:no-repeat;
@@ -7,31 +11,37 @@ header{
     text-align: center;
     color:black;
     font-size:80px;
-
 }
 
 nav{
-    border-color:white;
-    border-width: 5px;
-  	background-color: white;
-  	margin-top:3px;padding:2px 2px;
+	width: 100%;
+	margin-bottom: 1%;
+	box-shadow: 4px 4px 7px black;
+  	background-color: #e5e5e5;
  }
 nav ul{
-	justify-content: space-around;
-	font-family: 'Amatic SC', cursive;
-	font-size:25px;
-	display: inline-block;	
-    padding-left: 11%;
-	margin:0;
-	text-decoration: none;
-	color: blue;
+	margin: 0;
+  	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
 }
-nav ul a{padding:4px 4px;}
-nav ul a:hover{
-	background-color:#60783B; color:white;padding: 8px;
+nav ul li
+{
+	padding: 1% 4%;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+}
+nav ul li:hover{
+	background-color: #595959;
+}
+nav ul li a{text-decoration: none; font-size: 23px;}
+nav ul li a:hover{
+	color: black;
 }
 body{
-	background-color: #60783B;
+	background-color: #c4cde0;
 	font-color:purple;
 }
 
@@ -39,7 +49,7 @@ img{border-radius: 400px;}
 
 .box{width: 100%;display: flex;flex-direction: column;align-items: center}
   
-.brief{	font-family: 'Arapey', serif;text-align: center;font-size: 18px;width:100%;	color:white;margin-top: 5px;
+.brief{	font-family: 'Arapey', serif;text-align: center;font-size: 18px;width:100%;	color:black;margin-top: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -58,21 +68,30 @@ img{border-radius: 400px;}
 
 .components{padding:1%; display: flex;}
 
-.site{font-family: 'Bungee Shade', cursive;color:white;content: "\263A";font-size:35px;
+.site{font-family: 'Bungee Shade', cursive;color:black;content: "\263A";font-size:35px;
 }
-
+.formPlace{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 .blue{
 	width:100%;display: flex;justify-content: center;font-family: 'Shadows Into Light Two', cursive;color: white;
+	margin-top: 4%; color: black;
 }
 
-.pie{display: flex;flex-direction: row;width: 100%;margin: 2px 2px;padding:50px;}
+.pie{display: flex;flex-direction: row;width: 100%;margin-top: 5%;/*padding:50px;*/}
 .pink{
-	width:100%;display: flex; align-items:center;margin: 5px;}
+	width:100%;display: flex; 
+	padding-left: 5%
+	/*align-items:center*//*;margin: 5px;*/}
 .pink:hover{transform: scale(1.2); transition: transform .3s;
 }
-.about{padding-left: 5px;padding-right:5px;
-	 margin-top:10px;text-align: center;border-color: white;
-	 border-style: dotted; border-width: 5px;}
+.about{
+	padding:1%;
+	margin-top:1.5%;text-align: center;border-color: white;
+	border-style: dotted; border-width: 5px;
+	}
 
 
 .intails{font-family: 'Waiting for the Sunrise', cursive;font-size: 25px;color:black;resize: horizontal;
@@ -80,12 +99,12 @@ img{border-radius: 400px;}
  
 
 .heatle{font-family: 'Chewy', cursive;font-size: 40px;color: black;}
-.Location{display: flex;}
-.mymap{width:55%;padding:1%; padding-top:40px;}
-.details{width:41%;padding:1%;
-		font-family: 'Shadows Into Light Two', cursive;color: white;
-		margin-top: 40px;font-size: 20px;}
-
+.locationPlace{width: 100%; display: flex; flex-direction: row;}
+.Location{width:100%; display: flex; flex-direction: row;}
+.mymap{width:55%;}
+.details{width:45%;padding-top:2%;
+		font-family: 'Shadows Into Light Two', cursive;color: black;
+		margin-top: 3%;font-size: 20px;}
 footer{
 	background-image: url("image/wooden.jpg");
 	height:80;
@@ -94,10 +113,79 @@ footer{
 	margin-top:10px;
 	
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
 	.bag{flex-direction: column;}
-	nav ul a{flex-direction: column;}
-	.pie{flex-direction: column;}
-	
+	.pie{
+		margin-top: 8%;
+		width:100%;
+		display:flex;
+		flex-direction: column;
+		/*padding-left: 40%;*/
+	}
+	.pink
+	{
+		width: 100%;
+		padding-left: 0;
+	}
+	.pink a{
+		width: 30%;
+		padding-left: 40%;
+	}
+	.pink:hover{
 
+		transform: none;
+		opacity: 0.5;
+	}
+	header{
+		width: 100%;	
+	}
+	header b
+	{
+		font-size: 20px;
+	}
+	nav 
+	{
+		width: 100%;
+		box-shadow: none;
+		border-top: 1px solid black;
+	}
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	nav ul li{
+		border-bottom: 1px solid black;
+	}
+	.locationPlace{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		margin:0;
+		padding:0;
+	}
+	.locationPlace .Location{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.locationPlace .Location .mymap{
+		width: 100%;
+	}
+	.locationPlace .Location .details{
+		width: 85%;
+		padding:0;
+		text-align: center;
+		padding-left: 8.3%;
+	}
+	iframe{
+		width: 70%;
+		padding-left: 15%;
+		margin-top: 1%;
+	}
+	.formPlace{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 }
