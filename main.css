@@ -115,6 +115,73 @@ margin-top: 5%;
 	width: 100%;
 }
 
+.cvsec
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1%;
+}
+/*The div has width of 100% and box shadow of 4px from vertical and horizontal directions are given
+with 4px opacity on black color.*/
+.cvhead
+{
+	width: 100%;
+	background: #b91832;
+}
+.cvsec .headingh2{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+/*The heading within the div has font size of 30px in white color and 2% padding from left side.
+Text shadow of 4px from vertical and horizontal direction are given and 2px opacity in black color.*/
+.cvsec h2
+{
+	font-size: 30px;
+	color: white;
+	text-shadow: 4px 4px 2px black;
+	padding: 0 0 0 2%;
+}
+/*The div has width of 90% and contents within it are displayed in column using flex property.*/
+.cvcont
+{
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1.5%;
+}
+/*The div has width of 70%.*/
+.cvleft
+{
+	width: 70%;
+}
+/*The div has with of 30%.*/
+.cvright
+{
+	width: 30%;
+}
+
+/*The heading within the div has font size 25px, color black and bold font weight. The text is underlined.*/
+.cvleft h2
+{
+	font-size: 25px;
+	color: black;
+	text-shadow: none;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+	text-align: right;
+	padding-right: 5%;
+}
+/*The paragraph within the div has left padding of 5% and bold font weight.*/
+.cvleft p{
+	padding-right: 5%;
+	font-weight: bold;
+	text-align: right;
+}
+
 .details{width:100%;padding-top:2%;
 		font-family: 'Shadows Into Light Two', cursive;color: black;
 		margin-top: 3%;font-size: 20px; text-align: center;}
