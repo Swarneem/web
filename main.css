@@ -115,7 +115,7 @@ margin-top: 5%;
 	width: 100%;
 }
 
-.cvsec
+.cvsection
 {
 	width: 100%;
 	display: flex;
@@ -124,19 +124,19 @@ margin-top: 5%;
 }
 /*The div has width of 100% and box shadow of 4px from vertical and horizontal directions are given
 with 4px opacity on black color.*/
-.cvhead
+.cvheading
 {
 	width: 100%;
 	background: #b91832;
 }
-.cvsec .headingh2{
+.cvsection .headingh2{
 	font-size: 30px;
 	color: white;
 	text-align: center;
 }
 /*The heading within the div has font size of 30px in white color and 2% padding from left side.
 Text shadow of 4px from vertical and horizontal direction are given and 2px opacity in black color.*/
-.cvsec h2
+.cvsection h2
 {
 	font-size: 30px;
 	color: white;
@@ -144,7 +144,7 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 	padding: 0 0 0 2%;
 }
 /*The div has width of 90% and contents within it are displayed in column using flex property.*/
-.cvcont
+.cvcontents
 {
 	margin: 0 auto;
 	width: 90%;
@@ -152,19 +152,21 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 	flex-direction: row;
 	margin-top: 1.5%;
 }
+
 /*The div has width of 70%.*/
-.cvleft
+.cvleftside
 {
 	width: 70%;
 }
 /*The div has with of 30%.*/
-.cvright
+.cvrightside
 {
 	width: 30%;
+	padding-left: 10%;
+	padding-top: 6%;
 }
-
 /*The heading within the div has font size 25px, color black and bold font weight. The text is underlined.*/
-.cvleft h2
+.cvleftside h2
 {
 	font-size: 25px;
 	color: black;
@@ -176,7 +178,7 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 	padding-right: 5%;
 }
 /*The paragraph within the div has left padding of 5% and bold font weight.*/
-.cvleft p{
+.cvleftside p{
 	padding-right: 5%;
 	font-weight: bold;
 	text-align: right;
@@ -191,6 +193,7 @@ footer{
 	text-align: center;
 	padding: 1%;
 	margin-top:10px;
+	font-weight: bolder;
 	
 }
 
@@ -268,5 +271,41 @@ footer{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+	}
+	.cvsection{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.cvheading{
+		width: 100%;
+	}
+	.cvcontents{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.cvleftside{
+		width: 100%;
+	}
+	.cvleftside h2
+	{
+		text-align: center;
+		font-size: 20px;
+	}
+	.cvleftside p
+	{
+		text-align: center;
+		font-size: 15px;
+		font-weight: bolder;
+	}
+	.cvrightside{
+		width: 100%;
+		padding-left: 0;
+	}
+	.cvrightside img{
+		width: 85%;
+		padding-left: 8%;
+		border-radius: none;
 	}
 }
