@@ -41,7 +41,7 @@ nav ul li a:hover{
 	color: black;
 }
 body{
-	background-color: #c4cde0;
+	background-color:#c4cde0;;
 	font-color:purple;
 }
 
@@ -53,6 +53,10 @@ img{border-radius: 400px;}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.formPlace h1{
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
 }
 .pb{background-color:#333333;color:white;text-align: center;margin-top:2px;border-bottom:2px;margin-right:150px;margin-left:150px; font-size: 30px;}
 
@@ -80,10 +84,15 @@ img{border-radius: 400px;}
 	margin-top: 4%; color: black;
 }
 
-.pie{display: flex;flex-direction: row;width: 100%;margin-top: 5%;/*padding:50px;*/}
+.pie{display: flex;
+flex-direction: row;
+width: 100%;
+margin-top: 5%;
+/*padding:50px;*/}
 .pink{
-	width:100%;display: flex; 
-	padding-left: 5%
+	width:100%;
+	display: flex; 
+	padding-left: 12%
 	/*align-items:center*//*;margin: 5px;*/}
 .pink:hover{transform: scale(1.2); transition: transform .3s;
 }
@@ -99,12 +108,16 @@ img{border-radius: 400px;}
  
 
 .heatle{font-family: 'Chewy', cursive;font-size: 40px;color: black;}
-.locationPlace{width: 100%; display: flex; flex-direction: row;}
-.Location{width:100%; display: flex; flex-direction: row;}
-.mymap{width:55%;}
-.details{width:45%;padding-top:2%;
+.locationPlace{width: 100%; display: flex; flex-direction: column;}
+.Location{width:100%; display: flex; flex-direction: column; margin-top: 2%;}
+.mymap{width:100%;}
+.mymap iframe{
+	width: 100%;
+}
+
+.details{width:100%;padding-top:2%;
 		font-family: 'Shadows Into Light Two', cursive;color: black;
-		margin-top: 3%;font-size: 20px;}
+		margin-top: 3%;font-size: 20px; text-align: center;}
 footer{
 	background-image: url("image/wooden.jpg");
 	height:80;
@@ -113,6 +126,7 @@ footer{
 	margin-top:10px;
 	
 }
+
 @media screen and (max-width: 650px){
 	.bag{flex-direction: column;}
 	.pie{
@@ -160,7 +174,7 @@ footer{
 	.locationPlace{
 		width: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		margin:0;
 		padding:0;
 	}
@@ -170,7 +184,7 @@ footer{
 		flex-direction: column;
 	}
 	.locationPlace .Location .mymap{
-		width: 100%;
+		width: 80%;
 	}
 	.locationPlace .Location .details{
 		width: 85%;
@@ -179,7 +193,7 @@ footer{
 		padding-left: 8.3%;
 	}
 	iframe{
-		width: 70%;
+		width: 30%;
 		padding-left: 15%;
 		margin-top: 1%;
 	}
