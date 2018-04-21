@@ -1,7 +1,7 @@
 body{
 	margin:0;
 	padding:0;
-}
+}/*This section has provided 0 padding and margin for body*/
 header{
 	font-family: 'Fredericka the Great', cursive;
 	background-repeat:no-repeat;
@@ -11,14 +11,15 @@ header{
     text-align: center;
     color:black;
     font-size:80px;
-}
+}/*This section has provided font size and color as well as font to the header part*/
+/*this part also contains layout*/
 
 nav{
 	width: 100%;
 	margin-bottom: 1%;
 	box-shadow: 4px 4px 7px black;
   	background-color: #e5e5e5;
- }
+ }/*this css is maintained for navigation bar*/
 nav ul{
 	margin: 0;
   	padding: 0;
@@ -26,29 +27,28 @@ nav ul{
 	flex-direction: row;
 	list-style: none;
 	justify-content: center;
-}
+}/*css is maintained for items inside navigation bar*/
 nav ul li
 {
 	padding: 1% 4%;
 	font-family: 'Amatic SC', cursive;
 	font-weight: bolder;
-}
+}/*list of item inside navigation bar is managed by giving padding 1%*/
 nav ul li:hover{
-	background-color: #595959;
-}
-nav ul li a{text-decoration: none; font-size: 23px;}
-nav ul li a:hover{
-	color: black;
-}
+	background-color: #595959;color: white;
+}/*This section maintains color change while hovering cursor in the list inside navigation bar*/
+nav ul li a{text-decoration:none;font-size: 23px;}
+
 body{
 	background-color:#c4cde0;
-	font-color:purple;
-}
+}/*this section maintains color of the background for all pages*/
 
 img{border-radius: 400px;}
+/*This section maintains border radius of the corner of images*/
 .rep img{
 	border-radius: 0px;
 }
+
 .box{width: 100%;display: flex;flex-direction: column;align-items: center}
   
 .brief{	font-family: 'Arapey', serif;text-align: center;font-size: 18px;width:100%;	color:black;margin-top: 5px;
@@ -57,8 +57,13 @@ img{border-radius: 400px;}
 	align-items: center;
 }
 .formPlace h1{
+	font-size: 30px;
 	text-align: center;
 	font-family: 'Amatic SC', cursive;
+}
+.formPlace h2{
+	text-align:center;
+	font-size: 22px;
 }
 .pb{background-color:#333333;color:white;text-align: center;margin-top:2px;border-bottom:2px;margin-right:150px;margin-left:150px; font-size: 30px;}
 
@@ -105,7 +110,7 @@ margin-top: 5%;
 	}
 
 
-.intails{font-family: 'Waiting for the Sunrise', cursive;font-size: 25px;color:black;resize: horizontal;
+.intails{font-size: 25px;color:black;resize: horizontal;
     overflow: auto;}
  
 
@@ -116,7 +121,7 @@ margin-top: 5%;
 .mymap iframe{
 	width: 100%;
 }
-
+/*All of the above are the classes of div which maintains margin and padding and width of the items to assisst in responsive pages*/
 .cvsection
 {
 	width: 100%;
@@ -124,8 +129,7 @@ margin-top: 5%;
 	flex-direction: column;
 	margin-bottom: 1%;
 }
-/*The div has width of 100% and box shadow of 4px from vertical and horizontal directions are given
-with 4px opacity on black color.*/
+
 .cvheading
 {
 	width: 100%;
@@ -166,9 +170,8 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 	width: 30%;
 	padding-left: 10%;
 	padding-top: 6%;
-	border-radius: none;
-	border:none;
-}
+	border-radius: 0;
+	}
 .cvrightside .cvrightimg{
 	border-radius: 40px;
 	border:40px;
@@ -182,15 +185,15 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 	text-shadow: none;
 	font-weight: bold;
 	text-decoration: underline;
-	text-align: left;
-	text-align: right;
+	text-align: center;
+	
 	padding-right: 5%;
 }
 /*The paragraph within the div has left padding of 5% and bold font weight.*/
 .cvleftside p{
 	padding-right: 5%;
 	font-weight: bold;
-	text-align: right;
+	text-align: center;
 }
 
 .details{width:100%;padding-top:2%;
@@ -198,16 +201,19 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 		margin-top: 3%;font-size: 20px; text-align: center;}
 footer{
 	background-image: url("image/wooden.jpg");
-	height:80;
+	height:50px;
 	text-align: center;
 	padding: 1%;
 	margin-top:10px;
-	font-weight: bolder;	
+	font-weight: bolder;
+	font-size: 20px;	
 }
-.whole{background-color: #f2f2f2; margin:1%;}
+.whole{background-color: #dedfe0; margin:1%;}
 .rewrite{font-size: 20px;padding-top: 2%; padding-left: 1%; padding-right: 1%; text-align: justify;}
 .rep{padding-left: 36%; justify-content: center;}
-@media screen and (max-width: 650px){
+
+@media screen and (max-width: 650px)
+{
 	.bag{flex-direction: column;}
 	.pie{
 		margin-top: 8%;
@@ -348,4 +354,5 @@ footer{
 		width: 100%;
 		padding-left: 25%;
 	}
+	
 }
