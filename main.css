@@ -201,7 +201,6 @@ Text shadow of 4px from vertical and horizontal direction are given and 2px opac
 		margin-top: 3%;font-size: 20px; text-align: center;}
 footer{
 	background-image: url("image/wooden.jpg");
-	height:50px;
 	text-align: center;
 	padding: 1%;
 	margin-top:10px;
@@ -354,5 +353,17 @@ footer{
 		width: 100%;
 		padding-left: 25%;
 	}
-	
+	footer{
+		width: 100%;
+		font-size: 15px;
+		padding: 0;
+		margin: 0;
+	}
+	.heatle{
+		font-size: 27px;
+	}
+	.intails p{
+		font-size: 20px;
+	}
 }
+
