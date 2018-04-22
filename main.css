@@ -81,6 +81,13 @@ img{border-radius: 400px;}
 
 .site{font-family: 'Bungee Shade', cursive;color:black;content: "\263A";font-size:35px;
 }
+.coverimage{
+	justify-content: center;
+}
+.coverimage img{
+	border-radius: 0px;
+	padding-left: 30%;
+}
 .formPlace{
 		width: 100%;
 		display: flex;
@@ -211,6 +218,10 @@ footer{
 .rewrite{font-size: 20px;padding-top: 2%; padding-left: 1%; padding-right: 1%; text-align: justify;}
 .rep{padding-left: 36%; justify-content: center;}
 .rerite{text-align: center;font-size: 45px;}
+.rerite .whole .rep img{
+	width: 100%;
+
+}
 @media screen and (max-width: 650px)
 {
 	.bag{flex-direction: column;}
