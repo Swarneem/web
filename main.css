@@ -115,7 +115,7 @@ margin-top: 5%;
  
 
 .heatle{font-family: 'Chewy', cursive;font-size: 40px;color: black;}
-.locationPlace{width: 100%; display: flex; flex-direction: column;}
+?/*This part is for contact page*/.locationPlace{width: 100%; display: flex; flex-direction: column;}
 .Location{width:100%; display: flex; flex-direction: column; margin-top: 2%;}
 .mymap{width:100%;}
 .mymap iframe{
@@ -210,7 +210,7 @@ footer{
 .whole{background-color: #dedfe0; margin:1%;}
 .rewrite{font-size: 20px;padding-top: 2%; padding-left: 1%; padding-right: 1%; text-align: justify;}
 .rep{padding-left: 36%; justify-content: center;}
-
+.rerite{text-align: center;font-size: 45px;}
 @media screen and (max-width: 650px)
 {
 	.bag{flex-direction: column;}
@@ -353,6 +353,7 @@ footer{
 		width: 100%;
 		padding-left: 25%;
 	}
+
 	footer{
 		width: 100%;
 		font-size: 15px;
